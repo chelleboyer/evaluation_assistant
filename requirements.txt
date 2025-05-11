@@ -1,0 +1,10 @@
+# requirements.txt
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow
+torch
+transformers
+datasets
+evaluate 

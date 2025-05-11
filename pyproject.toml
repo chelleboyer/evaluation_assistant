@@ -1,7 +1,7 @@
 [project]
-name = "diesel_nav_assistant"
+name = "evaluation_assistant"
 version = "0.1.0"
-description = "Diesel route fuel locator"
+description = "LLM evaluation assistant"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
