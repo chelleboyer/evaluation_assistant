@@ -1,0 +1,47 @@
+nohup: ignoring input
+2025-05-13 13:51:36 - Loaded .env file
+2025-05-13 13:51:37 - Loading documents...
+Processing file: data/llm-evaluation.txt
+Detected HTML content in llm-evaluation.txt, extracting text...
+File: llm-evaluation.txt, Content length: 57
+Sample content (first 200 chars): Just a moment...Enable JavaScript and cookies to continue
+Processing file: data/llm_eval_example.txt
+File: llm_eval_example.txt, Content length: 3739
+Sample content (first 200 chars): # LLM Evaluation Methods: A Comprehensive Overview
+
+## Introduction
+
+Large Language Models (LLMs) have revolutionized natural language processing, but evaluating their performance presents unique chal
+Processing file: data/2407.11005v2.txt
+Detected HTML content in 2407.11005v2.txt, extracting text...
+File: 2407.11005v2.txt, Content length: 75727
+Sample content (first 200 chars): RAGBench: Explainable Benchmark for Retrieval-Augmented Generation Systems
+1 Introduction
+2 Related Work
+RAG evaluation
+Finetuned RAG evaluation models
+3 RAGBench Construction
+3.1 Component Datasets
+S
+2025-05-13 13:51:37 - Loaded 3 documents
+2025-05-13 13:51:37 - Splitting documents...
+2025-05-13 13:51:37 - Split into 101 chunks
+2025-05-13 13:51:37 - Creating embeddings...
+2025-05-13 13:51:37 - Warning: model not found. Using cl100k_base encoding.
+2025-05-13 13:51:38 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:51:39 - Created 101 embeddings
+2025-05-13 13:51:39 - Creating vector store...
+2025-05-13 13:51:39 - Vector store created successfully
+2025-05-13 13:51:39 - Creating tools...
+2025-05-13 13:51:39 - Tools created successfully
+2025-05-13 13:51:39 - Creating agent graph...
+2025-05-13 13:51:39 - Creating agent graph with tools
+2025-05-13 13:51:39 - Successfully created retriever
+2025-05-13 13:51:39 - Creating RAG graph for the tool
+2025-05-13 13:51:39 - RAG graph created successfully
+2025-05-13 13:51:39 - Successfully created RAG tool
+2025-05-13 13:51:39 - Creating LLM with model: gpt-4o-mini
+2025-05-13 13:51:39 - Agent graph compiled successfully
+2025-05-13 13:51:39 - Your app is available at http://localhost:8000
+gio: http://localhost:8000: Operation not supported
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
