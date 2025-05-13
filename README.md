@@ -2,6 +2,8 @@
 
 > *Because analyzing research papers shouldn't feel like having your teeth pulled!*
 
+## VIEW MY LOOM:  https://www.loom.com/share/11a3b62d4afb4cb48aa4157abdc6d708?sid=210a4fd6-4340-4c07-894c-850c587a272a
+
 ![AI Assistant](https://img.icons8.com/fluency/96/artificial-intelligence.png)
 
 ## What is this magic? ✨
@@ -13,7 +15,6 @@ The AI Evaluation Assistant is your new best friend when it comes to making sens
 - **Document Search**: Instantly find answers in loaded research papers
 - **Web Search**: Get real-time info from the vast internet without leaving the app
 - **ArXiv Integration**: Access academic papers without falling asleep at your keyboard
-- **Slick UI**: A beautiful interface that doesn't look like it was designed in 1997
 
 ## Tech Stack 🛠️
 
