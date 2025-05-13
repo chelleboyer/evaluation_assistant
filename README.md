@@ -6,7 +6,7 @@
 
 ## What is this magic? ✨
 
-The AI Evaluation Assistant is your new best friend when it comes to making sense of AI research papers, academic jargon, and cutting-edge ML techniques. It's like having a super-smart buddy who read all the boring stuff so you don't have to!
+The AI Evaluation Assistant is your new best friend when it comes to making sense of AI evaluation, academic jargon, and cutting-edge ML evaluation techniques. It's like having a super-smart buddy who read all the boring stuff so you don't have to!
 
 ### Features that'll make you go "woah!" 🤯
 
@@ -62,3 +62,58 @@ MIT - Because sharing is caring!
 ---
 
 Made with ❤️ and excessive amounts of coffee 
+
+## Deployment to Hugging Face Spaces
+
+This application can be deployed to Hugging Face Spaces using Docker.
+
+### Option 1: Using the Hugging Face UI
+
+1. Create a new Space on [Hugging Face Spaces](https://huggingface.co/spaces)
+2. Choose "Docker" as the Space SDK
+3. Upload this repository to the Space
+4. Set the following environment variables in the Space settings:
+   - `OPENAI_API_KEY`: Your OpenAI API key
+   - `TAVILY_API_KEY`: Your Tavily API key (for web search)
+5. The Space will automatically build and deploy the Docker image
+
+### Option 2: Using the Hugging Face CLI
+
+1. Install the Hugging Face CLI: `pip install huggingface_hub`
+2. Login to Hugging Face: `huggingface-cli login`
+3. Create a new Space:
+   ```
+   huggingface-cli repo create ai-evaluation-assistant --type space --private
+   ```
+4. Clone the empty repository:
+   ```
+   git clone https://huggingface.co/spaces/YOUR_USERNAME/ai-evaluation-assistant
+   ```
+5. Copy your code to the cloned repository
+6. Add, commit, and push your code:
+   ```
+   git add .
+   git commit -m "Initial commit"
+   git push
+   ```
+7. Set the required environment variables in the Space settings on the Hugging Face website
+
+## Local Development
+
+1. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Run the application:
+   ```
+   chainlit run app.py
+   ```
+
+3. Open your browser at `http://localhost:8000`
+
+## Building the Docker Image Locally
+
+```
+docker build -t ai-evaluation-assistant .
+docker run -p 8000:8000 -e OPENAI_API_KEY=your_key -e TAVILY_API_KEY=your_key ai-evaluation-assistant 
